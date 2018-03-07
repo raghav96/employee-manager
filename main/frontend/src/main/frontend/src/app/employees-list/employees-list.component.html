@@ -1,0 +1,15 @@
+<section *ngIf="isLoading && !errorMessage">
+  Retrieving data...
+</section>
+<!-- this is the new syntax for ng-repeat -->
+<ul>
+  <li *ngFor="let employee of employees">
+    <a [routerLink]="['/employees', employee.id]">
+      {{employee.name}}
+    </a>
+  </li>
+</ul>
+<!-- HERE: added this error message -->
+<section *ngIf="errorMessage">
+  {{errorMessage}}
+</section>

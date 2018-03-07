@@ -22,3 +22,11 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
+node_modules/
+node
+node_modules
+build
+npm-debug.log
+.env
+.DS_Store
